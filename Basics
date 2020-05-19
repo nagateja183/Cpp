@@ -21,6 +21,7 @@ namespace secondfun{
   firstfun::func();   /*Here we are specifing which namespace we need */
   secondfun::func();
   }
+  }
  
 Just try to print this program so that you can understand how the function with same name gets evaluated at the same time using 
 namespace.
@@ -54,4 +55,4 @@ Mostly we use "cin" and "cout" which are similar to "scanf" and "printf" in c la
 
  
  
- }
+
