@@ -1,0 +1,57 @@
+/*Basics --> we initially needs to know about what # does?
+Lines that start with # are called directives and these are processed by Preprocessor(preprocessor is the program that is invoked by compiler) 
+#include iostream  -->  This tells compiler to include standard input/output libraries.
+*/
+
+#include<iostream>
+using namespace std;      /*This line is to import the entirity of the std namespace into current namespace of the program, this 
+                          namespace basically used when have same function name or variable name in the program and we need to 
+                          distinguish between them*/
+namespace firstfun{     /* Here we are using namespace to distinguish the functions having same name */
+  void func(){
+  cout<<"firstfun";
+  }
+}
+namespace secondfun{
+  void func(){
+  cout<<"secondfun";
+    }
+  }
+ int main(){
+  firstfun::func();   /*Here we are specifing which namespace we need */
+  secondfun::func();
+  }
+ 
+Just try to print this program so that you can understand how the function with same name gets evaluated at the same time using 
+namespace.
+
+
+HEADER FILES AVAILABLE IN C++ FOR I/O OPERATIONS
+1) iostream - stands for standard input-output stream.
+2) iomanip - describes input output manipulators.
+3) fstream - this mainly describes file system.
+
+Mostly we use "cin" and "cout" which are similar to "scanf" and "printf" in c language.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ }
